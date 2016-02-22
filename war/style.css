@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+body {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: stretch;
+	align-items: stretch;
+	padding: 0px;
+	margin: 0px;
+	background-color: yellow;
+}
+
+#main-nav {
+	margin: 0px;
+	padding: 10px 0px;
+	background-color: red;
+	position: fixed;
+	width: 100vw;
+}
+#main-nav li {
+	display: inline-block;
+	margin: 0px 100px;
+	list-style-type: none;
+	background-color: gray;
+}
+
+#body-wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: blue;
+	justify-content: center;
+	margin-top: 5vh;
+	height: 95vh;
+}
+
+#hoofdstukken-nav {
+	background-color: green;
+	list-style-type: none;
+	width: 15vw;
+	padding: 50px 10px;
+	margin: 0px auto;
+}
+#hoofdstukken-nav li {
+	text-align: center;
+	background-color: hotpink;
+}
+#content-wrapper {
+	background-color: white;
+	width: 85vw;
+	text-align: center;
+}
+#box {
+	margin: 25vh auto;
+	width: 300px;
+	/*height: 200px;*/
+	/*background-color: gray;*/
+}
