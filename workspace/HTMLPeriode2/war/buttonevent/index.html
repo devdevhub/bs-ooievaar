@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Button Event</title>
+	<style type="text/css"></style>
+	</head>
+	
+	<body>
+		<input id="hide" type="button" name="hide" value="hide">
+		<p>I like jquery</p>
+		<p>I like html</p>
+	
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$('#hide').click(function() {
+			$('p').slideUp();
+		});
+	</script>
+</body>
+</html>

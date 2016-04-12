@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@ page import="javapack.Telefoon"%>
+    <%@ page import="javapack.Telefoonlijst"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Webshop</title>
+</head>
+<body>
+	<form action="index.jsp" method="get">
+			<input type="hidden" name="minprijs" id="minprijs"> 
+			<input type="hidden" name="maxprijs" id="maxprijs">
+			Kies Telefoon <select
+				name="autolijst">
+				<option value="alle">Alle Telefoons</option>
+				<option value="Samsung">Samsung</option>
+				<option value="Apple">Apple</option>
+				<option value="Oneplus">Oneplus</option>
+				<option value="Huawei">HUAWEI</option>
+				<option value="HTC">HTC</option>
+				<option value="Lotus">Lotus</option>
+				<option value="Citroen">Citroen</option>
+				<option value="Volvo">Volvo</option>
+				<option value="Mini">Minicooper</option>
+			</select> <input type="submit" name="knop_1" value="Ok">
+		</form>
+<% 
+Telefoonlijst telefoonlist = new Telefoonlijst();
+for (Telefoon telefoon : telefoonlist.getLijst()) {
+	out.print(telefoon.getMerk());
+	out.print(telefoon.getType());
+	out.print(telefoon.getPrijs());
+	out.print("<img src='"+telefoon.getFoto()+"' width='300px'>");
+	out.print(telefoon.getPrijsFormat());
+}
+%>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {background-color:blue;}
+	#book {width:100px; height:50px; background-color:green; position:relative;}
+</style>
+</head>
+<body>
+    <p id="clickme">Klik op mij, klik op mij!!!</p>
+    <div id="book"></div>
+</body>
+    <script src="../../2.1.4_jquery.min.js"></script>
+    <script>
+             $("#clickme").click(function () {
+                $("#book").animate({
+                    left: "+=50",
+                    height: "toggle"
+                }, 2000, function () {
+                    // Animation complete.
+                });
+            });
+    </script>
+
+</html>

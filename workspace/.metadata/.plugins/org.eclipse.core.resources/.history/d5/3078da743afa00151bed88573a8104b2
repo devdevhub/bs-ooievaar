@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<title>SwimmingClub</title>
+	</head>
+	
+	<body>
+		<?php
+			$clublist = array(
+				array("name" => "De spartelkuikens", "nMembers" => 25),
+				array("name" => "De waterbuffels", "nMembers" => 32),
+				array("name" => "Plonsmderin", "nMembers" => 11),
+				array("name" => "Bommetje", "nMembers" => 23)
+			);
+			
+			echo "<table>";
+				foreach ($clublist as $club) {
+					echo "<tr>";
+						echo "<td>".$club["name"]."</td>";
+						echo "<td>".$club["nMembers"]." ";
+						$nImages = ($club["nMembers"]-($club["nMembers"]%5))/5;
+							for ($i = 0; $i < $nImages; $i++) {
+								echo "<img src='swimmingclubs/swimmer.png' alt=''>";
+							}
+						echo "</td>";
+					echo "</tr>";
+				}
+			echo "</table>";
+		?>
+	</body>
+</html>

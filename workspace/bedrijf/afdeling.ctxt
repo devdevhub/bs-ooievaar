@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=naam
+comment0.target=afdeling(java.lang.String)
+comment1.params=lid
+comment1.target=void\ voegtoe(Medewerkers)
+comment2.params=
+comment2.target=void\ print()
+comment3.params=
+comment3.target=java.lang.String\ getNaam()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=java.util.ArrayList\ getMedewerkers()
+numComments=6

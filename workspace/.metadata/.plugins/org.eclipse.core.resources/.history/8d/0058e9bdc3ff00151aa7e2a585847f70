@@ -1,0 +1,79 @@
+package javapack;
+
+import java.util.ArrayList;
+
+public class Telefoonlijst {
+
+	/**
+	 * Klasse met een lijst van telefoon's
+	 * @author piet
+	 */
+	public class telefoonLijst {
+	    private ArrayList<Telefoon> telefoonlijst;
+	    
+	    /**
+	     * Constructor die de lijst aanmaakt en telefoon's toevoegt
+	     */
+	    public telefoonLijst() {
+	        telefoonlijst = new ArrayList<Telefoon>();
+	        Telefoon samsung1 = new Telefoon("Samsung", "Galaxy S7", 23999, 
+	          "images/telefoons/fordfiesta.jpg");
+	        telefoonlijst.add(ford1);
+	        Telefoon samsung2 = new Telefoon("Samsung", "Galaxy S7 edge", 18995, 
+	          "images/telefoons/fordfocus.jpg");
+	        telefoonlijst.add(ford2);
+	        Telefoon apple = new Telefoon("Apple", " iPhone 5s 16 GB", 14895, 
+	          "images/telefoons/opelastra.jpg");
+	        telefoonlijst.add(opel1);
+	        Telefoon apple2 = new Telefoon("Apple", "iPhone 6s 16 GB", 65450, 
+	          "images/telefoons/opelinsignia.jpg");
+	        telefoonlijst.add(opel2);
+	        Telefoon subaru1 = new Telefoon("Apple", "APPLE iPhone SE 64 GB", 34750, 
+	          "images/telefoons/subaruforester.jpg");
+	        telefoonlijst.add(subaru1);
+	        Telefoon subaru2 = new Telefoon("Oneplus", "OnePlus One", 28345, 
+	          "images/telefoons/subaruimpreza.jpg");
+	        telefoonlijst.add(subaru2);
+	        Telefoon mercedes1 = new Telefoon("Oneplus", "Oneplus 2", 110995, 
+	          "images/telefoons/mercedede63.png");
+	        telefoonlijst.add(mercedes1);
+	        Telefoon mercedes2 = new Telefoon("HUAWEI", "HUAWEI P9 Plus", 190780, 
+	          "images/telefoons/mercedescla45.jpg");
+	        telefoonlijst.add(mercedes2);
+	        Telefoon ferrari1 = new Telefoon("HUAWEI", "Nexus 6P", 350500, 
+	          "images/telefoons/ferrari612.jpg");
+	        telefoonlijst.add(ferrari1);
+	        Telefoon citroen1 = new Telefoon("Citroen", "2CV", 459, 
+	          "images/telefoons/citroen2cv.jpg");
+	        telefoonlijst.add(citroen1);
+	        Telefoon mini1 = new Telefoon("Mini", "Cooper", 34495, 
+	          "images/telefoons/minicooper.jpg");
+	        telefoonlijst.add(mini1);
+	     }
+	    
+	    /**
+	     * 
+	     * @return geeft de lijst met telefoon's
+	     */
+	    public ArrayList<Telefoon> getLijst() {
+	        return telefoonlijst;
+	    }
+	    
+	    
+	    
+	    /**
+	     * Ten behoeve van het select merk input veld
+	     * @return een lijst met alle unieke merken
+	     */
+	    public ArrayList<String> getMerken() {
+	        ArrayList<String> merken = new ArrayList<String>();
+	        for (Telefoon telefoon: telefoonlijst) {
+	            String merk = telefoon.getMerk();
+	            if (!merken.contains(merk)) {
+	                merken.add(merk);
+	            }
+	        }
+	        return merken;
+	    }
+	}
+}

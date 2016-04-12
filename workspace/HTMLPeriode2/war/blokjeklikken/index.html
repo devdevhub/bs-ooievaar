@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<style>
+			body {
+				text-align: center;
+				background-color: #CCCCCC;
+			}
+			div {
+				margin: 10vw 2vw 2vw 2vw;
+				width: 15vw;
+				height: 15vw;
+				display: inline-block;
+				background-color: white;
+			}
+		</style>
+		<title>Click Block</title>
+	<style type="text/css"></style>
+	</head>
+	
+	<body>
+		<div id="uno" style="background-color: blue;"></div>
+		<div id="due" style="background-color: blue;"></div>
+		<br>
+		<input id="clean" type="button" name="clean" value="Turn blocks white">
+	
+		
+	<script src="../../2.1.4_jquery.min.js"></script>
+	<script>
+		$('#uno').hover(
+			function() {$('#uno').css("background-color", "green");},
+			function() {$('#uno').css("background-color", "blue");}
+		);
+		$('#due').hover(
+			function() {$('#due').css("background-color", "purple");},
+			function() {$('#due').css("background-color", "blue");}
+		);
+		$('#clean').click(function() {
+			$('#uno, #due').css("background-color", "white");
+		});
+	</script>
+</body>
+</html>

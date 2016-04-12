@@ -1,0 +1,32 @@
+body {
+				padding-top: 3vw;
+				text-align: center;
+				font: 1vw "Arial";
+			}
+			form > div {margin: 0.5vw;}
+			.label {
+				width: 10vw;
+				display: inline-block;
+			}
+			#error {
+				font: 0.75vw "Arial";
+				color: red;
+			}
+			input {font: 1vw "Arial";}
+			input[type="button"], #error {
+				position: relative;
+				left: 5vw;
+				top: 0.5vw;
+			}
+			table {
+				border-collapse: collapse;
+				position: relative;
+				left: 35vw;
+				top: 5vw;
+				display: none;
+			}
+			th, td {
+				border: 0.2vw solid black;
+				width: 7.5vw;
+				height: 3vw;
+			}

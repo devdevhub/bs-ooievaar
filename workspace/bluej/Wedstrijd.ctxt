@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=team1\ team2\ datum
+comment0.target=Wedstrijd(Team,\ Team,\ Datum)
+comment1.params=
+comment1.target=void\ print()
+comment2.params=
+comment2.target=java.lang.String\ getTeams()
+comment3.params=
+comment3.target=java.lang.String\ getDatum()
+comment4.params=
+comment4.target=java.lang.String\ getUitslag()
+comment5.params=datum
+comment5.target=void\ setDatum(Datum)
+comment6.params=score1\ score2
+comment6.target=void\ setUitslag(int,\ int)
+numComments=7

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Store </title>
+   <style>
+   	table, td, th{
+   	border:1px solid red;
+   	border-collapse: collapse;
+   	padding: 5px;
+   	}
+   
+   
+   </style>
+</head>
+
+<body>
+<form>
+<input type="text">
+<input type="text">
+<input type="text">
+<input type="button" onclick="append()">
+
+
+</form>
+<table>
+	<tr>
+		<th>Merk</th>
+		<th>Model</th>
+		<th>Prijs</th>
+		<th></th>
+	</tr>
+	<tr>
+	    <td colspan="2">Totaal</td>
+	</tr>
+</table>
+
+</body>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script>
+	var store = [];
+	
+	function append(){
+		
+	var car = {
+	        merk: $('input[type="text"]').eq(0).val(),
+			model: $('input[type="text"]').eq(1).val(),
+			prijs: Number($('input[type="text"]').eq(2).val())
+			
+	}	
+		
+		
+	};
+	
+	</script>
+</html>

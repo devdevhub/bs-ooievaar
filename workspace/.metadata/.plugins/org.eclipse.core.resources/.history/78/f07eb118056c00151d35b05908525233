@@ -1,0 +1,31 @@
+package Toetsherkansing;
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.Graphics;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import H10.Opdracht2.KnopLuisteraar;
+public class Opdracht2 extends Applet {
+
+class KnopLuisteraar implements  ActionListener {
+		
+		public void actionPerformed(ActionEvent e) {
+
+			hoogsteGetal = Double.parseDouble(tf.getText());
+num = hoogsteGetal;
+		if(hoogsteGetal > res)
+			res = hoogsteGetal;
+		
+		laagsteGetal = Double.parseDouble(tf.getText());
+		res2 = Double.parseDouble(tf.getText());
+		
+		num2 = laagsteGetal;
+		if(laagsteGetal < res2)
+			res2 = laagsteGetal;
+			repaint ();
+		}
+	}
+}

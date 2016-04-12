@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;HTMLPeriode2/war/Imageslider&apos; to &apos;imageslider&apos;" description="Rename resource &apos;Imageslider&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="war/Imageslider" name="imageslider" stamp="1449226703946" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;HTMLPeriode2/war/typeof/Index.html&apos; to &apos;index.html&apos;" description="Rename resource &apos;Index.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="war/typeof/Index.html" name="index.html" stamp="1449226824249" updateReferences="true"/>
+</session>

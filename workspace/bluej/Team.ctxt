@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=naam\ lid1\ lid2
+comment0.target=Team(java.lang.String,\ Leerling,\ Leerling)
+comment1.params=
+comment1.target=void\ print()
+comment2.params=
+comment2.target=int\ getScore()
+comment3.params=score
+comment3.target=int\ setScore(int)
+comment4.params=
+comment4.target=int\ addScore()
+numComments=5

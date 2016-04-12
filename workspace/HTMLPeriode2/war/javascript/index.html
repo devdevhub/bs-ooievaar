@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<form action="index.html" >
+  Submit a number:<br>
+  <input type="text" id="input">
+  <br>
+  <input type="button" value="Submit" onclick="Java()">
+</form>
+<div></div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script>
+function Java(){
+	
+	
+var x = $('#input').val();
+var text = "mijntekst";
+
+    if (x > 0 && x <= 10) { 
+        text = "Input OK";
+    } else {
+        text = "Input not valid";
+    }
+    $('div').html(text);
+
+}
+
+</script>
+</html>

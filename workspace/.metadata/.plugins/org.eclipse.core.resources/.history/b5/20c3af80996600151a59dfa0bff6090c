@@ -1,0 +1,51 @@
+package H10;
+
+import java.applet.*;
+import java.awt.Button;
+import java.awt.Graphics;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+@SuppressWarnings("serial")
+public class Opdracht2 extends Applet {
+
+	TextField tf;
+	Button b;
+	double getal;
+	double num;
+	double res;
+	String s;
+	
+	public void init() {
+		tf = new TextField("", 5);
+		add(tf);
+		
+		tf.addActionListener(new KnopLuisteraar());
+		
+		getal = 0;
+        num = 0;     
+		s = "";
+	}
+	
+	public void paint(Graphics g) {
+		g.drawString("Hoogste getal: " + num+ "is groter dan"+res, 50, 70);
+		
+	}
+	
+	class KnopLuisteraar implements  ActionListener {
+		
+		public void actionPerformed(ActionEvent e) {
+			getal = Integer.parseInt(tf.getText());
+			
+			getal = res;
+			if(getal > num) {
+				num = getal;
+			}
+			if(num == res)
+				res = 0;
+			
+			repaint ();
+		}
+	}
+}

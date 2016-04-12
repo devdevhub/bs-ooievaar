@@ -1,0 +1,16 @@
+<form action="voorbeeldform.php" method="post">
+    Voornaam  		<br><input type="text" name="vnaam" value=""><br><br>
+    Tussenvoegsel 	<br><input type="text" name="tsnvgsl" value=""><br><br>
+    Achternaam 		<br><input type="text" name="anaam" value=""><br><br>
+    Geslacht 		<br><input type="radio" name="geslacht" value="man"> Man
+    			    <br><input type="radio" name="geslacht" value="man"> Vrouw<br><br>
+    Kleur ogen 	    <select name="klogen">
+        <option>Groen</option>
+        <option>Grijs</option>
+        <option>Blauw</option>
+        <option>Bruin</option>
+    </select><br><br>
+    Geboortedatum  <input type="date" name="gebdatum" value=""><br><br><br>
+	Omschrijving <textarea name="omschrijving"></textarea><br><br><br>
+	<br><input checkbox ="" name="eten" Sperciebonen="">Sperciebonen<br>
+</form>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imageslider</title>
+	<style>
+	div {
+		width: 400px;
+		height: 300px;
+		background-color: red;
+		white-space: nowrap;
+		overflow: hidden;
+	}	
+	img {
+		width:100%;
+		height:100%;
+		float: none;
+		position: relative;
+	}
+	</style>
+</head>
+<body>
+	<div>
+			<img src="nieuws20150708_xboxupdate.jpg" ><img src="PS4_Gold_Color_Variation_11.jpg" >
+			
+		</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script>
+var array = ["nieuws20150708_xboxupdate.jpg", "PS4_Gold_Color_Variation_11.jpg"];
+var index = 0;
+$('img').click(function(){
+	index++;
+	$('img').animate(
+		{"left": "-100%"},
+		1000,
+		function(){
+			$('img').eq(0).attr("src", array[index%2]);
+			$('img').eq(1).attr("src", array[(index+1)%2]);
+			$('img').css("left", "initial");
+		}
+	);
+});
+</script>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<meta charset="US-ASCII">
+<title>Full Featured Website</title>
+
+<style>
+.wrapper {
+background-color: aquamarine;
+border: 1px solid black;
+width: 900px;
+Height: 900px;
+margin: auto;
+Display: flex;
+flex-direction:row;
+
+
+}
+
+section.a,
+section.b {
+border:1px solid black;
+width: 200px;
+height: 210px;
+flex:1 0 auto;
+display:flex;
+flex-direction:column;
+background-image: url(/playstation.jpg);
+background-size:cover;
+}
+
+section.a{
+flex:3 0 auto;
+
+
+
+}
+section.b > article {
+background-color: deepskyblue;
+border: 1px solid black;
+width: 100%;
+height: 100px;
+flex:1 0 auto;
+
+
+}
+.articleA{ background-image: url(/playstation-1995-1.jpg);
+background-size:100% auto;}
+.articleB{background-image: url(/Playstation2.jpg);
+background-size:cover;}
+
+
+}
+section.g > article {
+position: absolute;
+top: 300px;
+left: 950px;
+background-color: black;
+
+width: 300px;
+height: 210px;
+flex:1 0 auto;
+
+}
+</style>
+
+			</head>
+			<body>
+				<div class="wrapper">
+				<section class="c">
+						<article></article>
+						</section>
+										<section class="d">
+						<article></article>
+						</section>
+						<section class="e">
+						<article></article>
+						</section>
+						<section class="f">
+						<article></article>
+						</section>
+						<section class="g">
+						<article></article>
+						</section>
+						<section class="a">
+							</section>
+						
+						<section class="b">
+							<article class=articleA>
+							</article>
+							<article class=articleB>
+							</article>
+						</section>
+				</div>
+
+</body>
+
+</html>

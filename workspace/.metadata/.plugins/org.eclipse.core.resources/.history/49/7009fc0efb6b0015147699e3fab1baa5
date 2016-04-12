@@ -1,0 +1,47 @@
+package Toetsinleidingjava1;
+
+import java.applet.Applet;
+import java.awt.Button;
+import java.awt.Graphics;
+import java.awt.Label;
+import java.awt.TextField;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+@SuppressWarnings("serial")
+public class HerkansingOpdracht1 extends Applet {
+	TextField tekstvak;
+    Label label;				
+    double getal;
+    double fooi;
+    Button plus;
+    Button min;
+    
+   
+    public void init() {
+    	tekstvak = new TextField("", 20);
+        label = new Label("Type hier een getal");
+        tekstvak.addActionListener( new TekstvakListener() );
+        add(label);
+        add(tekstvak);
+        fooi=1.15;
+        plus = new Button("+");
+        min = new Button("-");
+    	
+    }
+    
+    public void paint(Graphics g) {
+        g.drawString("Het getal is " + getal * fooi, 50, 60 );
+        setSize(500,2500);
+    }
+	
+    public class TekstvakListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            String s = tekstvak.getText();
+            getal = Double.parseDouble( s );
+           
+            repaint();
+        }
+
+    }
+}

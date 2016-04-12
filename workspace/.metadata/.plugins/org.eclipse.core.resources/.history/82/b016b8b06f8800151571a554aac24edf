@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Css2 HTML</title>
+<style>
+			div {
+				position: absolute;
+				left: 100px; top: 100px;
+			}
+			img#back {
+				position: absolute;
+				left: 0px; top: 0px;
+				width: 686px; height: 203px;
+				border: 2px solid black;
+			}
+			img#fore {
+				position: absolute;
+				left: 30px; top: 25px;
+				z-index: 1;
+				border: 2px solid black;
+			}
+		</style>
+		<style type="text/css"></style>
+		</head>
+		<body>
+		<div>
+			<img id="fore" src="banner626x153.jpg">
+			<img id="back" src="banner-achtergrond.jpg">
+		</div>
+	
+</body>
+</html>

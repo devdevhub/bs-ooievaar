@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>FlexBox</title>
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Anton);
+			@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+			#menu {
+				padding: 12px;
+			}
+			.social {
+				margin-left: 55%;
+				margin-right: auto;
+			}
+			nav img {
+				width: 25px;
+				height: 25px;
+				border-radius: 2px 2px;
+			}
+			.a {
+				position: relative;
+			}
+			.b > #a1, .b > #a2 {
+				position: relative;
+			}
+			.info {
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+			}
+
+			.a > div {
+				width: 100%;
+				height: 100%;
+			}
+
+			div.info > div.postdate {
+				display: inline;
+			}
+			.info {
+				font-family: 'Anton', sans-serif;
+				font-size: 15px;
+				color: white;
+				background: linear-gradient(to top,black,black, transparent);
+			}
+			.postdate {
+				background: linear-gradient(to right, #E60000,#E60000, transparent);
+				font-family: 'Anton', sans-serif;
+				color: white;
+				padding: 6px;
+				width: 5%;
+				margin-bottom: auto;
+			}
+			.a > div {
+				background-image: url("uncharted-collection.jpg");
+				background-size: cover;
+			}
+			img#logo {
+				margin-left: 20%;
+				width: 30%;
+				height: 30%;
+			}
+			nav {
+				background-color: grey;
+				width: 60%;
+				margin: auto;
+				height: 10%;
+			}
+			nav ul {
+				list-style: none;
+				margin: auto;
+			}
+			nav ul li {
+				display: inline;
+			}
+			nav ul li a {
+				text-decoration: none;
+				color: black;
+				font-size: 25px;
+				font-family: 'Anton', sans-serif;
+				padding-left: 3px;
+				padding-right: 3px;
+			}
+
+			nav ul li a:hover {
+				background-color: darkgrey;
+				transition: 0.3s ease-in-out 0.1s;
+			}
+			nav ul li a:not(hover) {
+				background-color: none;
+				transition: 0.3s ease-in-out 0.1s;
+			}
+			body {
+				background-color: #0f0f0f
+			}
+			.wrapper > #body {
+				background-color: antiquewhite;
+				width: 60%;
+				height: auto;
+				margin: auto;
+				display: flex;
+				flex-direction: row;
+			}
+
+			section.a, section.b {
+				height: 320px;
+				width: 200px;
+				flex: 1 0 auto;
+				display: flex;
+				flex-direction: column;
+			}
+			section.a {
+				flex: 3 0 auto;
+			}
+			section.b > div {
+				background-color: white;
+				width: 100%;
+				height: 80px;
+				flex: 1 0 auto;
+			}
+			#a1 {
+				background-image: url("tlao2.png");
+				background-size: cover;
+			}
+			#a2 {
+				background-image: url("REMA.jpg");
+				background-size: cover;
+			}
+			.a:hover, #a2:hover, #a1:hover {
+				background-color: white;
+				opacity: 0.6;
+				transition: 0.3s ease-in-out 0.1s;
+			}
+			.a:not(hover),#a1:not(hover),#a2:not(hover)
+			{
+			transition: 0.3s ease-in-out 0.1s;
+			}
+			.wrapper2 {
+				height: auto;
+				width: 60%;
+				background-color: antiquewhite;
+				margin: auto;
+			}
+			section.c > nav {
+				width: 100%;
+				font-size: 15px;
+			}
+			.list ul li img {
+				width: 100px;
+				height: 65px;
+				border: 3px inset red;
+			}
+			.list ul {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				width: 80%;
+				padding: 12px;
+			}
+			.list ul li {
+				border: 1px solid lightgrey;
+				margin-top: 5px;
+				display: flex;
+			}
+			.list ul li p {
+				font-family: 'Titillium Web', sans-serif;
+				font-size: 10px;
+				margin-left: 5px;
+			}
+			nav ul li a#update {
+				font-size: 12px;
+				margin-left: 55%;
+			}
+			.list ul li p.updated {
+				display: inline;
+				margin-left: 48%;
+			}
+			.list ul li a:hover {
+				transition: 0.3s ease-in-out 0.1s;
+				color: white;
+				opacity: 0.6;
+			}
+			.list ul li a:not(hover) {
+				transition: 0.3s ease-in-out 0.1s;
+			}
+			footer {
+				width: 60%;
+				background-color: grey;
+				height: 300px;
+				margin: auto;
+			}
+			footer > #sitemap {
+				display: flex;
+				font-family: 'Titillium Web', sans-serif;
+				width: 60%;
+			}
+			footer ul {
+				list-style: none;
+				margin-left: 5%;
+				text-align: center;
+				font-size: 10px;
+			}
+			footer ul li a {
+				color: black;
+				font-size: 10px;
+				margin: 0px;
+			}
+			footer p {
+				font-size: 10px;
+				float: bottom;
+				text-align: left;
+				margin-top: 5%;
+				font-family: 'Titillium Web', sans-serif;
+			}
+		</style>
+	<style type="text/css"></style></head>
+	</html>

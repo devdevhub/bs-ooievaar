@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Politieapp</title>
+	<style>
+	div {
+		width: 400px;
+		background-color: red;
+		white-space: nowrap;
+		overflow: hidden;
+	}	
+	img {
+		width:100%;
+		height:100%;
+		float: none;
+		position: relative;
+	}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<img src="eyesBarack.jpg" ><img src="eyesMorgan.jpg"><img src="eyesNelson.jpg">
+	</div>
+	<div id="div2">
+		<img src="noseBarack.jpg" ><img src="noseMorgan.jpg"><img src="noseNelson.jpg">
+	</div>
+	<div id="div3">
+		<img src="mouthBarack.jpg" ><img src="mouthMorgan.jpg"><img src="mouthNelson.jpg">
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script>
+var array = ["eyesBarack.jpg", "eyesMorgan.jpg", "eyesNelson.jpg"];
+var nosearray = ["noseBarack.jpg", "noseMorgan.jpg", "noseNelson.jpg"];
+var moutharray = ["mouthBarack.jpg", "mouthMorgan.jpg", "mouthNelson.jpg"];
+var index1 = 0;
+var index2 = 0;
+var index3 = 0;
+$('#div1 img').click(function(){
+	index1++;
+	$('#div1 img').animate(
+		{"left": "-100%"},
+		1000,
+		function(){
+			$('#div1 img').eq(0).attr("src", array[index1%3]);
+			$('#div1 img').eq(1).attr("src", array[(index1+1)%3]);
+			$('#div1 img').css("left", "initial");
+		}
+	);
+});
+$('#div2 img').click(function(){
+	index2++;
+	$('#div2 img').animate(
+		{"left": "-100%"},
+		1000,
+		function(){
+			$('#div2 img').eq(0).attr("src", nosearray[index2%3]);
+			$('#div2 img').eq(1).attr("src", nosearray[(index2+1)%3]);
+			$('#div2 img').css("left", "initial");
+		}
+	);
+});
+$('#div3 img').click(function(){
+	index3++;
+	$('#div3 img').animate(
+		{"left": "-100%"},
+		1000,
+		function(){
+			$('#div3 img').eq(0).attr("src", moutharray[index3%3]);
+			$('#div3 img').eq(1).attr("src", moutharray[(index3+1)%3]);
+			$('#div3 img').css("left", "initial");
+		}
+	);
+});
+</script>
+
+</html>

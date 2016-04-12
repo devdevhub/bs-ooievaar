@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HTML</title>
+  <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+    <link rel="stylesheet" href="../portofolio.css">
+</head>
+<body>
+<div id="flip">Click Here To See More Options</div>
+   <div id="panel">
+   <a href="../About/"><li>ABOUT</a></li>
+   <a href="../"><li>HOME</a></li>
+   <a href="../Jsp/"><li>JSP</li></a>
+   <a href="../contact/"><li>CONTACT</a></li>
+   </div>
+   <div class="html">
+   <p>klik op github om een nieuwe tab te openen naar me github</p> 
+    <li><a href="https://github.com/Rifati/" target="_blank">Github</a></li>
+  </div>
+<div class="h3">
+<ul>
+<p> hieronder zie je me projecten</p>
+    <li><a target="frame" href="http://1-dot-jsproc-1253.appspot.com/mobieltelefoonshop/index.jsp">JSP Rekenmachine</a></li>
+    <li><a target="frame" href="http://1-dot-jsproc-1253.appspot.com/opdracht13/index.jsp">JSP Rekenmachine</a></li>
+	<li><a target="frame" href="http://css-project-1126.appspot.com/">CSS 1-4</a></li>
+	<li><a target="frame" href="http://envoudig-1064.appspot.com/">Envoudige Website</a></li>
+	<li><a target="frame" href="http://flex-1162.appspot.com/">Full Featured Website</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/jquerymenu/">jquerymenu</a></li>
+	<li><a target="frame" href="http://floater-1132.appspot.com/">Floater</a></li>
+	<li><a target="frame" href="http://innate-might-105115.appspot.com/">Fonts</a></li>
+	<li><a target="frame" href="http://rifati-1054.appspot.com/">Hello World</a></li>
+	<li><a target="frame" href="http://table-1132.appspot.com/">Table</a></li>
+	<li><a target="frame" href="http://voorbeeldformulier.appspot.com/">Voorbeeldformulier</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/jquerytest/">Jquerytest</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/buttonevent/">Buttonevent</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/animatie/">Animation</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/blokjeklikken/">lokjeklikken</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/javascript/">Javascript Variables</a>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/typeof/">Typeof</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/imageslider/">Imageslider</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/politieapp/">Politieapp</a></li>
+	<li><a target="frame" href="http://htmlperiode2.appspot.com/jQueryMobileframework/">JqueryMobileFramework</a></li>
+</ul>
+
+<iframe name="frame" ></iframe>
+</body>
+</html>
